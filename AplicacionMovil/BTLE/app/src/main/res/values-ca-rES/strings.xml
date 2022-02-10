@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BTLE</string>
+    <string name="nombre_app">A Tot Gas</string>
+
+    <!-- SPLASH -->
+    <string name="textoSplash">Dus la teua salut al següent nivell</string>
+
+
+    <!-- LOG IN -->
+    <string name="textoEmailLogin">Correu </string>
+    <string name="textoContrasenyaLogin">Contrasenya</string>
+    <string name="textoContrasenyaOEmailOlvidada">¿Has olvidat la teua contrasenya?</string>
+    <string name="textoContrasenyaOEmailIncorrecto">Email o Contrasenya Incorrectes</string>
+    <string name="botonIniciarSesión">Iniciar sessió</string>
+    <string name="textoIniciarSesionInvitado">¿Encara no tens compte? Accedix com a convidat</string>
+    <string name="entrarInvitado">ENTRAR COM A CONVIDAT</string>
+
+
+    <!-- PANEL PRINCIPAL CLIENTE -->
+    <string name="textPanelPrincipal">Panel Principal </string>
+    <string name="pulsaParaAcceder">Polsa para accedir </string>
+    <string name="textObserva">Observa el mapa de la teua zona hui.</string>
+    <string name="textContaminacion">Nivell de Contaminació</string>
+    <string name="textMapa">Mapa de Gasos</string>
+    <string name="textSO2">SO2</string>
+    <string name="textNO2">NO2</string>
+    <string name="textCO2">CO2</string>
+    <string name="textElige">Tria una de les nostres opcions</string>
+    <string name="textRecorrido">Recorregut</string>
+    <string name="textMediciones">Medicions</string>
+    <string name="textLogros">Èxits</string>
+    <string name="textConsejos">Consells</string>
+    <string name="textPerfil">Perfil</string>
+    <string name="textAcercaDe">Sobre</string>
+    <string name="textLogOut">Tancar sessió</string>
+    <string name="saludo">Hola </string>
+
+
+    <!-- PANEL PRINCIPAL ADMIN -->
+    <string name="textPanelAdmin">Panell Principal Admin</string>
+    <string name="textGestion">¿Que vols gestionar?</string>
+    <string name="adminUsuarios">Usuaris</string>
+    <string name="adminSensores">Sensors</string>
+    <string name="adminMejora">Así tens els teus stats</string>
+    <string name="textLevel">Nivell</string>
+    <string name="textHTrabajadas">H. Treballades</string>
+    <string name="textPuesto">Llocs</string>
+    <string name="puesto">Administratiu</string>
+
+    <!-- PERFIL -->
+    <string name="textPasos">Pasos</string>
+    <string name="textPeso">Pes (kg)</string>
+    <string name="textAltura">Altura (cm)</string>
+    <string name="textRanking">Ranking</string>
+    <string name="textEditar">Editar</string>
+    <string name="masInfo">Polsa así per a obtindre més informació sobre la aplicació</string>
+
+    <!-- LOGROS -->
+    <string name="textLogrosMayus">Èxits</string>
+    <string name="textGases">Gasos</string>
+    <string name="textAmigos">Amics</string>
+    <string name="textProceso">En Procés:</string>
+    <string name="textHacer">Per Fer:</string>
+    <string name="textConseguido">Aconseguit:</string>
+    <string name="ratio">%1$s/%2$s</string>
+    <string name="progreso">Progrés:</string>
+    <string name="no_tienes_logros_en_proceso">No tens èxits en procés.</string>
+    <string name="no_tienes_logros_por_hacer">No tens èxits per fer.</string>
+    <string name="no_tienes_logros_conseguidos">No tens èxits completats.</string>
+
+    <!-- RECORRIDO -->
+    <string name="textRecorridoMayus">RECORREGUT</string>
+    <string name="textDistanciaKm">Distància Km</string>
+    <string name="textDistanciaPasos">Distància Pasos</string>
+    <string name="textVmedia">Velocitat Mitja</string>
+    <string name="textDesnivel">Desnivell</string>
+    <string name="textKcal">Kcals Consumides</string>
+    <string name="textGraficaPasos">Gràfica pasos, ajusta el periode!</string>
+
+
+    <!-- MEDICIONES -->
+    <string name="textMedicionesMayus">MEDICIONS</string>
+
+
+    <!-- CONSEJOS -->
+    <string name="textConsejosMayus">CONSELLS</string>
+    <string name="c1T">Com protegir-se de la contaminació</string>
+    <string name="c1f1">La contaminació atmosfèrica de l\'aire causa prop de set milions de morts a l\'any a nivell global i l\'efecte és pitjor en els xiquets. Evita els carrers amb més trànsit i les zones industrials.</string>
+    <string name="c1f2">Un estudi de 2017 de King‘s College, una de les facultats de la Universitat de Londres, va constatar que anar per un carrer paral·lel, en lloc de la principal amb més trafique, redueix l\'exposició a la contaminació en un 53% en mitjana i en alguns casos fins a 60%. Cura amb l\'hora de major trànsit.</string>
+    <string name="c1f3">\"Si no pots evitar els carrers amb més trànsit, tracta d\'ajustar en la mesura del possible a quina hora camines en elles\", va assenyalar Powell.En general, els nivells de contaminació són més baixos abans de l\'hora pique que fins i tot hores després d\'ella. Les persones d\'edat avançada també han de tindre una precaució especial.</string>
+    <string name="c1f4">\"En envellir, la capacitat del cos humà per a compensar els efectes dels perills ambientals es redueix\", assenyala el lloc airnow.gov, de l\'Agència de Protecció Ambiental dels Estats Units, EPA per les seues sigles en anglés. Planeja quan i on fas exercici.</string>
+    <string name="c1f5">Evita l\'exercici a l\'aire lliure durant l\'hora pique i quan els nivells de contaminació són alts. I si uses la teua bicicleta evita els carrers amb més trànsit.</string>
+    <string name="c2T">Perills d\'inhalar SO2</string>
+    <string name="c2f1">Quins efectes té en la salut?: \nEl Diòxid de sofre és un gas incolor, irritant, amb una olor penetrant que es comença a percebre amb 0,3 a 1,4 ppm i és perfectament distingible a partir de 3 ppm -parteixes per milió-. La seua densitat és el doble que la de l\'aire. No és un gas inflamable, ni explosiu i té molta estabilitat, és molt soluble en aigua i en contacte amb ella es converteix en àcid sulfúric. Consisteix en un àtom de sofre i dos d\'oxigen.</string>
+    <string name="c2f2">\n La contaminació de l\'aire per SO2 causa els següents efectes:\n \n - Dificultat per a respirar.\n - Inflamació de les vies respiratòries.\n - Irritació ocular per formació d\'àcid sulfurós sobre les mucoses humides.\n - Alteracions psíquiques.\n - Edema pulmonar.\n - Aturada cardíaca.\n - Col·lapse circulatori.\n - Queratitis.\n \n El sofre és un verí altament nociu per a la salut de les persones, si bé són les plantes les que menys toleren els seus efectes.\n</string>
+    <string name="c3T">Avantatges caminar 10k passos al dia</string>
+    <string name="c3F">Un dels desafiaments físics més populars i estesos dels últims temps es tracta del repte de caminar 10.000 passos al dia. Quins beneficis comporta aquesta practica per a la teua salut tant física com mental?\n \n Què li succeeix al teu cos si decideixes realitzar aquesta activitat física?\n - Millora la salut del teu cor: L\'activitat física regular ajuda a augmentar la quantitat de sang oxigenada que s\'envia als músculs, impulsant una bona circulació i reduint les probabilitats de patir problemes cardiovasculars.\n - Enforteix els teus pulmons: Moure\'s diàriament fa més forts i resistents tant els teus pulmons com els músculs circumdants. A mesura que augmenta la taxa i el volum d\'oxigen que inhala, també el fa la capacitat del seu cos per a usar-lo de manera eficient.\n - Potència la teua concentració: L\'esport estimula l\'alliberament d\'hormones com les endorfinas, així com el flux sanguini al cervell, la qual cosa propícia que millores la teua funció cognitiva. Així podràs combatre millor l\'estrés i l\'ansietat alhora que millores la creativitat, productivitat i concentració.\n - Ossos més forts: L\'activitat física exerceix una pressió addicional sobre els ossos, la qual cosa ajuda a millorar la seua densitat i redueix el risc d\'osteoporosi en les etapes més avançades de la vida.\n - La pressió arterial baixa: Aqueixos 10.000 passos diaris poden ajudar a reduir la rigidesa dels vasos sanguinis, permetent que la sang fluïsca més lliurement.\n</string>
+    <string name="c4T">Aconsegueix més assoliments</string>
+    <string name="c4F">La superació personal mostra la capacitat que té una persona a través de la seua intel·ligència i de la seua dedicació per a aconseguir els seus objectius i créixer com a persona. Com bé va explicar el científic Albert Einstein, explica que el desig mou el món amb el seu impuls tan potent.\n\n \n La superació personal no té límit, és a dir, un ésser humà pot continuar progressant a nivell de coneixement i de presa de consciència al llarg de la seua vida. Voluntat i coneixement que són la base de la superació personal, són dues qualitats que diferencien a l\'ésser humà de la resta d\'éssers de l\'univers. La superació personal mostra la capacitat que té un ésser humà per a reflexionar sobre si mateix, però cosa que és més important, per a actuar d\'acord amb els seus valors i creences.\n\n El procés de superació personal suposa deixar arrere certs hàbits i creences irracionals per a donar pas a una nova realitat que reforce el benestar personal. Existeixen recursos especialment recomanats com el coaching i els llibres d\'autoajuda per a reforçar la superació personal.\n</string>
+    <string name="c5T">Com reduir la teua petjada de carboni</string>
+    <string name="c5F">Sé verd, et donem alguns senzills consells que pots incorporar a la teua vida quotidiana i aconseguir un planeta més vivible.\n \n 1. Utilitza menys l\'assecadora de roba: Els estenedors i els *rack d\'assecat són una opció amigable amb el planeta. Les assecadores de roba produeixen una gran quantitat de CO₂, al no utilitzar-les baixes el teu consum d\'electricitat (i el compte), deixes de produir diòxid de carboni i, a més, tens com a aliat al millor llevataques que existeix: el sol.\n 2. Desconnecta el carregador del teu mòbil: Encara que no estigues usant el carregador, si el deixes connectat continua consumint energia i contribuint al canvi climàtic, per això els diuen vampirs d\'energia. El mateix passa amb la resta dels teus aparells si els deixes connectats: pantalla de TV, computadora, Blu-ray, DVD, etc. La millor opció és comprar barres multicontacto, amb aquestes podràs desconnectar totes les teues màquines en un sol moviment.\n 3. Utilitza bosses de roba quan faces el súper: Segur això ja ho sabies, però un dels majors enemics del medi ambient és l\'ús excessiu del plàstic, i usar caixes de cartó o bosses de roba en fer la compra, és una mesura necessària.\n 4. Redueix la ingesta de carns: Ja es tracte de porc, cap de bestiar o ocells, el procés per a portar-los a la teua taula gasta una gran quantitat d\'energia.\n</string>
+
+
+
+
+
+
+        <!-- INSTRUCCIONES -->
+    <string name="textSiguiente">Següent</string>
+    <string name="textSaltar">Botar</string>
+    <string name="textEmpezar">Començar</string>
+    <string name="controlaTusalud">Controla la teua salut</string>
+    <string name="saludMuchoTexto">Una vegada tingues el sensor i aquesta aplicació tan sols tens que encendre el sensor prop del telèfon i obrir aquesta aplicanció. Inicia Sesió i ja pots començar a obtindre totes les teues dades.</string>
+    <string name="multiplesOpciones">Múltiples Opcións</string>
+    <string name="OpcionesMuchoTexto">Fent click en el panel superior accedeixes a un mapa de gasos el cual et dona informació de la teua zona. Però aso no es tot, prem els botons de baix i descobreix totes les seues funcionalitats.</string>
+    <string name="monitoriza">Monitoritza els teus èxits</string>
+    <string name="LogrosMuchoTexto">Si ets un amant del deport en el apartat de \'Recorregut\' pots veure totes les teues mètriques diaries a més de motivar-te amb els reptes del apartat \'Èxits\'.</string>
+    <string name="mapaDecont">Mapa de Contaminació</string>
+    <string name="ContaminacionMuchoTexto">Una vegada el mapa comproba que zones tenen més contaminació i evítales. Pots compartir ubicacións de alt nivell de contaminació per a que els teus coneguts l\'eviten.</string>
+
+
+
+    <!-- NOTIFICACIONES -->
+    <string name="nodo_estropeado">El node sensor s\'ha trenca, contacte amb el nostre soport tècnic.</string>
+    <string name="bateria_baja">El node sensor s\'està quedant sense bateria, es recomana carregar-lo.</string>
+    <string name="nodo_desconectado">El node sensor ha segut desconectat, comproba que el bluetooth està activat i que el node està a menys de 10m.</string>
+    <string name="compartir_ubicacion">Compartir ubicació</string>
+    <string name="boton_guardar_perfil">Guardar</string>
+    <string name="boton_editar_perfil">Modificar</string>
+    <string name="volver_atras_invitado">Tornar arrere</string>
+</resources>

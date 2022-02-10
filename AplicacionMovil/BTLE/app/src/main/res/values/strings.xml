@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">BTLE</string>
+    <string name="nombre_app">A Todo Gas</string>
+
+    <!-- SPLASH -->
+    <string name="textoSplash">Lleva tu salud al siguiente nivel</string>
+
+
+    <!-- LOG IN -->
+    <string name="textoEmailLogin">Correo </string>
+    <string name="textoContrasenyaLogin">Contraseña</string>
+    <string name="textoContrasenyaOEmailOlvidada">¿Olvidaste tu contraseña?</string>
+    <string name="textoContrasenyaOEmailIncorrecto">Email o Contraseña Incorrectos</string>
+    <string name="botonIniciarSesión">Iniciar sesión</string>
+    <string name="textoIniciarSesionInvitado">¿Aún no tienes cuenta? Entra como invitado</string>
+    <string name="entrarInvitado">ENTRAR COMO INVITADO</string>
+
+
+    <!-- PANEL PRINCIPAL CLIENTE -->
+    <string name="textPanelPrincipal">Panel Principal </string>
+    <string name="pulsaParaAcceder">Pulsa para acceder </string>
+    <string name="textObserva">Observa el mapa de tu zona hoy.</string>
+    <string name="textContaminacion">Nivel Contaminación</string>
+    <string name="textMapa">Mapa Gases</string>
+    <string name="textSO2">SO2</string>
+    <string name="textNO2">NO2</string>
+    <string name="textCO2">CO2</string>
+    <string name="textElige">Elige una de nuestras opciones</string>
+    <string name="textRecorrido">Recorrido</string>
+    <string name="textMediciones">Mediciones</string>
+    <string name="textLogros">Logros</string>
+    <string name="textConsejos">Consejos</string>
+    <string name="textPerfil">Perfil</string>
+    <string name="textAcercaDe">Acerca De</string>
+    <string name="textLogOut">Cerrar Sesión</string>
+    <string name="saludo">Hola </string>
+
+
+    <!-- PANEL PRINCIPAL ADMIN -->
+    <string name="textPanelAdmin">Panel Principal Admin</string>
+    <string name="textGestion">¿Qué quieres gestionar?</string>
+    <string name="adminUsuarios">Usuarios</string>
+    <string name="adminSensores">Sensores</string>
+    <string name="adminMejora">Aquí tienes tus stats</string>
+    <string name="textLevel">Level</string>
+    <string name="textHTrabajadas">H. Trabajadas</string>
+    <string name="textPuesto">Puesto</string>
+    <string name="puesto">Administrativo</string>
+
+    <!-- PERFIL -->
+    <string name="textPasos">Pasos</string>
+    <string name="textPeso">Peso (kg)</string>
+    <string name="textAltura">Altura (cm)</string>
+    <string name="textRanking">Ranking</string>
+    <string name="textEditar">Editar</string>
+    <string name="masInfo">Pulsa aquí para obtener más información sobre la aplicación</string>
+
+    <!-- LOGROS -->
+    <string name="textLogrosMayus">LOGROS</string>
+    <string name="textGases">Gases</string>
+    <string name="textAmigos">Amigos</string>
+    <string name="textProceso">En Proceso:</string>
+    <string name="textHacer">Por Hacer:</string>
+    <string name="textConseguido">Conseguido:</string>
+    <string name="ratio">%1$s/%2$s</string>
+    <string name="progreso">Progreso:</string>
+    <string name="no_tienes_logros_en_proceso">No tienes logros en proceso.</string>
+    <string name="no_tienes_logros_por_hacer">No tienes logros por hacer.</string>
+    <string name="no_tienes_logros_conseguidos">No tienes logros completados.</string>
+
+    <!-- RECORRIDO -->
+    <string name="textRecorridoMayus">RECORRIDO</string>
+    <string name="textDistanciaKm">Distancia Km</string>
+    <string name="textDistanciaPasos">Distancia Pasos</string>
+    <string name="textVmedia">Velocidad Media</string>
+    <string name="textDesnivel">Desnivel</string>
+    <string name="textKcal">Kcals Consumidas</string>
+    <string name="textGraficaPasos">Gráfica pasos, ajusta el periodo!</string>
+
+
+    <!-- MEDICIONES -->
+    <string name="textMedicionesMayus">MEDICIONES</string>
+
+
+    <!-- CONSEJOS -->
+    <string name="textConsejosMayus">CONSEJOS</string>
+    <string name="c1T">Como protegerse de la contaminacion</string>
+    <string name="c1f1"> La contaminación atmosférica del aire causa cerca de siete millones de muertes al año a nivel global y el efecto es peor en los niños. Evita las calles con más tráfico y las zonas industriales</string>
+    <string name="c1f2">Un estudio de 2017 de King‘s College, una de las facultades de la Universidad de Londres, constató que ir por una calle paralela, en lugar de la principal con más trafico, reduce la exposición a la contaminación en un 53% en promedio y en algunos casos hasta 60%. Cuidado con la hora de mayor tráfico.</string>
+    <string name="c1f3">\"Si no puedes evitar las calles con más tráfico, trata de ajustar en lo posible a qué hora andas en ellas\", señaló Powell.En general, los niveles de contaminación son más bajos antes de la hora pico que incluso horas después de ella. Los adultos mayores también deben tener cuidados especiales.</string>
+    <string name="c1f4">\"Al envejecer, la capacidad del cuerpo humano para compensar los efectos de los peligros ambientales se reduce\", señala el sitio airnow.gov, de la Agencia de Protección Ambiental de Estados Unidos, EPA por sus siglas en inglés. Planea cuándo y dónde haces ejercicio.</string>
+    <string name="c1f5">Evita el ejercicio al aire libre durante la hora pico y cuando los niveles de contaminación son altos. Y si usas tu bicicleta evita las calles con más tráfico.</string>
+    <string name="c2T">Peligros de inhalar SO2</string>
+    <string name="c2f1">¿Qué efectos tiene en la salud?:\n El Dióxido de azufre es un gas incoloro, irritante, con un olor penetrante que se comienza a percibir con 0,3 a 1,4 ppm y es perfectamente distinguible a partir de 3 ppm -partes por millón-. Su densidad es el doble que la del aire. No es un gas inflamable, ni explosivo y tiene mucha estabilidad, es muy soluble en agua y en contacto con ella se convierte en ácido sulfúrico. Consiste en un átomo de azufre y dos de oxígeno.</string>
+    <string name="c2f2">\n La contaminación del aire por SO2 causa los siguientes efectos:\n \n - Dificultad para respirar.\n - Inflamación de las vías respiratorias.\n - Irritación ocular por formación de ácido sulfuroso sobre las mucosas húmedas.\n - Alteraciones psíquicas.\n - Edema pulmonar.\n - Paro cardíaco.\n - Colapso circulatorio.\n - Queratitis.\n \n El azufre es un veneno altamente nocivo para la salud de las personas, si bien son las plantas las que menos toleran sus efectos.\n</string>
+    <string name="c3T">Ventajas caminar 10k pasos al día</string>
+    <string name="c3F">Uno de los desafíos físicos más populares y extendidos de los últimos tiempos se trata del reto de caminar 10.000 pasos al día. ¿Qué beneficios comporta esta practica para tu salud tanto física como mental?\n \n ¿Qué le sucede a tu cuerpo si decides realizar esta actividad física?\n - Mejora la salud de tu corazón: La actividad física regular ayuda a aumentar la cantidad de sangre oxigenada que se envía a los músculos, impulsando una buena circulación y reduciendo las probabilidades de padecer problemas cardiovasculares.\n - Fortalece tus pulmones: Moverse a diario hace más fuertes y resistentes tanto tus pulmones como los músculos circundantes. A medida que aumenta la tasa y el volumen de oxígeno que inhala, también lo hace la capacidad de su cuerpo para usarlo de forma eficiente.\n - Potencia tu concentración: El deporte estimula la liberación de hormonas como las endorfinas, así como el flujo sanguíneo al cerebro, lo que propicia que mejores tu función cognitiva. Así podrás combatir mejor el estrés y la ansiedad a la vez que mejoras la creatividad, productividad y concentración.\n - Huesos más fuertes: La actividad física ejerce una presión adicional sobre los huesos, lo que ayuda a mejorar su densidad y reduce el riesgo de osteoporosis en las etapas más avanzadas de la vida.\n - La presión arterial baja: Esos 10.000 pasos diarios pueden ayudar a reducir la rigidez de los vasos sanguíneos, permitiendo que la sangre fluya más libremente.\n</string>
+    <string name="c4T">Consigue más logros</string>
+    <string name="c4F">La superación personal muestra la capacidad que tiene una persona a través de su inteligencia y de su dedicación para alcanzar sus objetivos y crecer como persona. Cómo bien explicó el científico Albert Einstein, explica que el deseo mueve el mundo con su impulso tan potente.\n\n \n La superación personal no tiene límite, es decir, un ser humano puede seguir progresando a nivel de conocimiento y de toma de conciencia a lo largo de su vida. Voluntad y conocimiento que son la base de la superación personal, son dos cualidades que diferencian al ser humano del resto de seres del universo. La superación personal muestra la capacidad que tiene un ser humano para reflexionar sobre sí mismo, pero lo que es más importante, para actuar de acuerdo a sus valores y creencias.\n\n El proceso de superación personal supone dejar atrás ciertos hábitos y creencias irracionales para dar paso a una nueva realidad que refuerce el bienestar personal. Existen recursos especialmente recomendados como el coaching y los libros de autoayuda para reforzar la superación personal.\n</string>
+    <string name="c5T">Como reducir tu huella de carbono</string>
+    <string name="c5F">Sé verde, te damos algunos sencillos consejos que puedes incorporar a tu vida cotidiana y lograr un planeta más vivible.\n \n 1. Utiliza menos la secadora de ropa: Los tendederos y los rack de secado son una opción amigable con el planeta. Las secadoras de ropa producen una gran cantidad de CO2, al no utilizarlas bajas tu consumo de electricidad (y la cuenta), dejas de producir dióxido de carbono y, además, tienes como aliado al mejor quitamanchas que existe: el sol.\n 2. Desconecta el cargador de tu móvil: Aunque no estés usando el cargador, si lo dejas conectado sigue consumiendo energía y contribuyendo al cambio climático, por eso los llaman vampiros de energía. Lo mismo pasa con el resto de tus aparatos si los dejas conectados: pantalla de TV, computadora, Blu-ray, DVD, etc. La mejor opción es comprar barras multicontacto, con estas podrás desconectar todas tus máquinas en un solo movimiento.\n 3. Utiliza bolsas de tela cuando hagas el súper: Seguro esto ya lo sabías, pero uno de los mayores enemigos del medio ambiente es el uso excesivo del plástico, y usar cajas de cartón o bolsas de tela al hacer la compra, es una medida necesaria.\n 4. Reduce la ingesta de carnes: Ya se trate de cerdo, res o aves, el proceso para llevarlos a tu mesa gasta una gran cantidad de energía.\n</string>
+
+
+    <!-- INSTRUCCIONES -->
+    <string name="textSiguiente">Siguiente</string>
+    <string name="textSaltar">Saltar</string>
+    <string name="textEmpezar">Empezar</string>
+    <string name="controlaTusalud">Controla tu Salud</string>
+    <string name="saludMuchoTexto">Una vez tengas el sensor y esta aplicación tan solo tienes que encender el sensor cerca del teléfono  y abrir esta aplicación. Inicia sesión y ya puedes empezar a obtener todos tus datos.</string>
+    <string name="multiplesOpciones">Multiples Opciones</string>
+    <string name="OpcionesMuchoTexto">Pinchando en el panel superior accedes a un mapa de gases el cual te da información de tu zona. Pero esto no es todo, pulsa los botonos de abajo y descubre todas sus funcionalidades</string>
+    <string name="monitoriza">Monitoriza tus Logros</string>
+    <string name="LogrosMuchoTexto">Si eres un amante del deporte, en el apartado de \'Recorrido\' puedes ver todas tus metricas diarias además de motivarte con los retos del apartado \'Logros\'.</string>
+    <string name="mapaDecont">Mapa de Contaminación</string>
+    <string name="ContaminacionMuchoTexto">Una vez en el mapa comprueba que zonas tienen más contaminación y evitalas. Puedes compartir ubicaciones con alto nivel de contaminación para que tus conocidos las eviten.</string>
+
+
+
+    <!-- NOTIFICACIONES -->
+    <string name="nodo_estropeado">El nodo sensor se ha estropeado, contacte con nuestro soporte técnico.</string>
+    <string name="bateria_baja">El nodo sensor se está quedando sin batería, se recomienda cargarlo.</string>
+    <string name="bateria_baja1h" translatable="false">Queda 1 hora de uso, se recomienda cargarlo.</string>
+    <string name="bateria_baja2h" translatable="false">Quedan 2 horas de uso, se recomienda cargarlo.</string>
+    <string name="bateria_baja4h" translatable="false">Quedan 4 horas de uso, se recomienda cargarlo.</string>
+    <string name="nodo_desconectado">El nodo sensor se ha sido desconectado, compruebe que el bluetooth está activado y que el nodo está a menos de 10m.</string>
+    <string name="compartir_ubicacion">Compartir ubicación</string>
+    <string name="boton_guardar_perfil">Guardar</string>
+    <string name="boton_editar_perfil">Editar</string>
+    <string name="volver_atras_invitado">Volver Atrás</string>
+
+</resources>

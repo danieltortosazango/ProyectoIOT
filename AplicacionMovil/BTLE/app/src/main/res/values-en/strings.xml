@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BTLE</string>
+    <string name="nombre_app">A Todo Gas</string>
+
+    <!-- SPLASH -->
+    <string name="textoSplash">Take your health to the next level</string>
+
+
+    <!-- LOG IN -->
+    <string name="textoEmailLogin">Email </string>
+    <string name="textoContrasenyaLogin">Password</string>
+    <string name="textoContrasenyaOEmailOlvidada">Forgot your password?</string>
+    <string name="textoContrasenyaOEmailIncorrecto">Incorrect email or password</string>
+    <string name="botonIniciarSesión">Login</string>
+    <string name="textoIniciarSesionInvitado">Don\'t have an account? Login as guest</string>
+    <string name="entrarInvitado">LOGIN AS GUEST</string>
+
+
+    <!-- PANEL PRINCIPAL CLIENTE -->
+    <string name="textPanelPrincipal">Main Panel </string>
+    <string name="pulsaParaAcceder">Tap to access </string>
+    <string name="textObserva">Take a look at your local map today.</string>
+    <string name="textContaminacion">Pollution level</string>
+    <string name="textMapa">Gas Map</string>
+    <string name="textSO2">SO2</string>
+    <string name="textNO2">NO2</string>
+    <string name="textCO2">CO2</string>
+    <string name="textElige">Pick one of our options</string>
+    <string name="textRecorrido">Distance</string>
+    <string name="textMediciones">Measurements</string>
+    <string name="textLogros">Achievements</string>
+    <string name="textConsejos">Pieces of advice</string>
+    <string name="textPerfil">Profile</string>
+    <string name="textAcercaDe">About us</string>
+    <string name="textLogOut">Sign out</string>
+    <string name="saludo">Welcome, </string>
+
+
+    <!-- PANEL PRINCIPAL ADMIN -->
+    <string name="textPanelAdmin">Main Admin Panel</string>
+    <string name="textGestion">What do you want to manage?</string>
+    <string name="adminUsuarios">Users</string>
+    <string name="adminSensores">Sensors</string>
+    <string name="adminMejora">Your Stats</string>
+    <string name="textLevel">Level</string>
+    <string name="textHTrabajadas">Worked h</string>
+    <string name="textPuesto">Position</string>
+    <string name="puesto">Manager</string>
+
+
+    <!-- PERFIL -->
+    <string name="textPasos">Steps</string>
+    <string name="textPeso">Weight (kg)</string>
+    <string name="textAltura">Height (cm)</string>
+    <string name="textRanking">Ranking</string>
+    <string name="textEditar">Edit</string>
+    <string name="masInfo">Press here if you want more info about this app</string>
+
+    <!-- LOGROS -->
+    <string name="textLogrosMayus">ACHIEVEMENTS</string>
+    <string name="textGases">Gasses</string>
+    <string name="textAmigos">Friends</string>
+    <string name="textProceso">Work in progress:</string>
+    <string name="textHacer">To Do:</string>
+    <string name="textConseguido">Completed:</string>
+    <string name="ratio">%1$s/%2$s</string>
+    <string name="progreso">Progress:</string>
+    <string name="no_tienes_logros_en_proceso">You don\'t have any achievements in progress.</string>
+    <string name="no_tienes_logros_por_hacer">You don\'t have any achievements to do.</string>
+    <string name="no_tienes_logros_conseguidos">You don\'t have any completed achievements.</string>
+
+    <!-- RECORRIDO -->
+    <string name="textRecorridoMayus">DISTANCE</string>
+    <string name="textDistanciaKm">Distance (Km)</string>
+    <string name="textDistanciaPasos">Steps</string>
+    <string name="textVmedia">Average Speed</string>
+    <string name="textDesnivel">Slope</string>
+    <string name="textKcal">Consumed Kcals</string>
+    <string name="textGraficaPasos">Steps graph, select period!</string>
+
+
+    <!-- MEDICIONES -->
+    <string name="textMedicionesMayus">MEASUREMENTS</string>
+
+
+    <!-- CONSEJOS -->
+    <string name="textConsejosMayus">PIECES OF ADVICE</string>
+    <string name="c1T">How to protect yourself from pollution</string>
+    <string name="c1f1">Air pollution kills around seven million people every year and its effect is much worse in children. Avoid your city\'s busiest streets and industrial zones. </string>
+    <string name="c1f2">A 2017 research from King‘s College, one of the faculties of the University of London, stated that using a parallel street instead of the main one, reduces exposure to pollution by 53% on average and in some cases up to 60%. Be careful with rush hours.</string>
+    <string name="c1f3">\"If you can\'t avoid busy streets, try adjusting the hours you spend there\", said Powell. Generally, pollution levels are lower before rush hour than even hours after it. Elderly people should take special care.</string>
+    <string name="c1f4">\"As we grow older, our body\'s capacity to fight the effects of environmental pollution decreases\", says airnow.gov, a Environmental Protection Agency\'s site, EPA in short. Mind where and when you exercise.</string>
+    <string name="c1f5">Avoid exercising outside during rush hour while pollution levels are high. And if you\'re riding a bike avoid streets with a lot of traffic.</string>
+    <string name="c2T">Risks of inhaling SO2</string>
+    <string name="c2f1">What effects does it have on our health ?:\n Sulfur dioxide is a colorless, irritating gas with a penetrating odor that begins to be perceived at 0.3 to 1.4 ppm and is perfectly distinguishable from 3 ppm -parts per million-. Its density is twice that of air. It is not a flammable or explosive gas and has a lot of stability, it is very soluble in water and in contact with it it becomes sulfuric acid. It consists of one atom of sulfur and two of oxygen.</string>
+    <string name="c2f2">\n Air pollution by SO2 causes the following effects: \n \n - Difficulty in breathing. \n - Inflammation of the respiratory tract. \n - Eye irritation due to the formation of sulfurous acid on the moist mucous membranes. \n -Psychic alterations . \n - Pulmonary edema. \n - Cardiac arrest. \n - Circulatory collapse. \n - Keratitis. \n \n Sulfur is a highly harmful poison for human health, although it is plants that less tolerate its effects. \n </string>
+    <string name="c3T">Perks of walking 10k steps daily</string>
+    <string name="c3F">One of the most popular and widespread physical challenges in recent times is the challenge of walking 10,000 steps a day. What benefits does this practice entail for your physical and mental health? \n \n What happens to your body if you decide to do this physical activity? \n - Improves the health of your heart: Regular physical activity helps to increase the amount of oxygenated blood that is sent to the muscles, promoting good circulation and reducing the chances of cardiovascular disease. \n - Strengthen your lungs: Moving daily makes your lungs and the surrounding muscles stronger and more resistant. As the rate and volume of oxygen you inhale increases, so does your body\'s ability to use it efficiently. \n - Boost your concentration: Sport stimulates the release of hormones such as endorphins, as well as flow blood to the brain, which encourages you to improve your cognitive function. This will help you better combat stress and anxiety while improving creativity, productivity and concentration. \n - Stronger bones: Physical activity puts additional pressure on the bones, which helps improve their density and reduces risk from osteoporosis in the later stages of life. \n - Low blood pressure: Those 10,000 daily steps can help reduce the stiffness of blood vessels, allowing blood to flow more freely. \n </string>
+    <string name="c4T">Achieve more</string>
+    <string name="c4F">Self-improvement shows the ability of a person through their intelligence and dedication to achieve their goals and grow as a person. As scientist Albert Einstein explained well, desire moves the world with its powerful impulse. \n \n \n Self-improvement has no limit, that is, a human being can continue to progress at the level of knowledge and making of conscience throughout his life. Will and knowledge that are the basis of personal improvement, are two qualities that differentiate the human being from the rest of the beings in the universe. Self-improvement shows the ability of a human being to reflect on himself, but more importantly, to act according to his values ​​and beliefs. \n \n The self-improvement process involves leaving behind irrational habits and beliefs to give way to a new reality that reinforces personal well-being. There are specially recommended resources such as coaching and self-help books to reinforce self-improvement. \n </string>
+    <string name="c5T">How to reduce your carbon footprint</string>
+    <string name="c5F">B
+        e green, we give you some simple tips that you can incorporate into your daily life and achieve a more livable planet. \n \n 1. Use the clothes dryer less: Clotheslines and drying racks are a planet-friendly option. Clothes dryers produce a large amount of CO2, by not using them you reduce your electricity consumption (and the bill), you stop producing carbon dioxide and, in addition, you have as an ally the best stain remover that exists: the sun. \n 2 Disconnect the charger your phone\'s charger: Even if you are not using the charger, if you leave it connected it continues to consume energy and contribute to climate change, which is why they are called energy vampires. The same happens with the rest of your devices if you leave them connected: TV screen, computer, Blu-ray, DVD, etc. The best option is to buy multi-contact bars, with these you can disconnect all your machines in a single movement. \n 3. Use cloth bags when you do the super: You already knew this, but one of the greatest enemies of the environment is the excessive use of plastic, and using cardboard boxes or cloth bags when shopping, is a necessary measure. \n 4. Reduce your meat intake: Whether it is pork, beef or poultry, the process to take them to your table uses a lot of energy. \n </string>
+
+    <!-- INSTRUCCIONES -->
+    <string name="textSiguiente">Next</string>
+    <string name="textSaltar">Skip</string>
+    <string name="textEmpezar">Start</string>
+    <string name="controlaTusalud">Keep an eye on your health</string>
+    <string name="saludMuchoTexto">Once you got the sensor and this app you only have to turn on the sensor near your phone and open this app. Login and start collecting data.</string>
+    <string name="multiplesOpciones">Multiple Options</string>
+    <string name="OpcionesMuchoTexto">Tapping on the top panel opens up a local gas map. But it doesn\'t stop there, press the buttons below and discover all they have to offer.</string>
+    <string name="monitoriza">Achievements</string>
+    <string name="LogrosMuchoTexto">If you\'re a sports person, in your \'Distance\' section you can check your daily steps and more, or motivate yourself in the \'Achievements\' section.</string>
+    <string name="mapaDecont">Pollution Map</string>
+    <string name="ContaminacionMuchoTexto">Once in the map check which zones are more polluted and avoid them. You can share which locations have higher a higher pollution level so your loved ones can avoid them too.</string>
+
+
+
+    <!-- NOTIFICACIONES -->
+    <string name="nodo_estropeado">Sensor node is not working, contact our technical support team.</string>
+    <string name="bateria_baja">El nodo sensor se está quedando sin batería, se recomienda cargarlo.</string>
+    <string name="nodo_desconectado">Sensor node has been disconnected, check that Bluetooth is enabled and the sensor node is less than 10m away.</string>
+    <string name="compartir_ubicacion">Share location</string>
+    <string name="boton_guardar_perfil">Save</string>
+    <string name="boton_editar_perfil">Edit</string>
+    <string name="volver_atras_invitado">Return</string>
+</resources>

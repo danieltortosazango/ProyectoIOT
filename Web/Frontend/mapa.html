@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mapa</title>
+  <!-- En el head siempre tenemos que cargar el link y el script para poder utilizar la librería del mapa -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Aqui cargamos el CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <!-- Aqui cargamos la libreria de heat -->
+  <script src="./build/heatmap.js"></script>
+  <script src="./plugins/leaflet-heatmap/leaflet-heatmap.js"></script>
+  <!--Iconos-->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <main>
+    <section class="mapContainer">
+      <div class="cabecera">
+      <div class="flechaMapa">
+      <a href="index.html"><img src="img/flecha_atras_dorada.png" alt=""></a>
+      <h2 class="subtitleMapa">Mapa<span class="point">.</span></h2>
+      </div>
+      <button id="btn-abrir-filtrar" class="btn-abrir-filtrar"><i class="fas fa-filter"></i>Filtrar</button>
+     
+      </div>
+      <p class="copy__sectionMapa">Datos obtenidos por gente como tú</p>
+      
+      		<div class="filtrar" id="filtrar">
+				<form action="" method="post">
+					<div class="contenedor-inputs">
+					<a href="#" id="btn-cerrar-filtrar" class="btn-cerrar-filtrar"><i class="fas fa-times"></i></a>
+						<input type="number" placeholder="Dia" required name="dia">
+						<input type="number" placeholder="Mes" required name="mes">
+						<input type="number" placeholder="Año" required name="anyo">
+						<input type="submit" class="btn-submit" value="OK">
+						<div class="hoyBoton"><input type="submit" class="btn-submit" value="Hoy"></div>
+					</div>
+					
+				</form>
+			</div>
+      
+         
+      <div id="map"></div>
+    </section>
+  </main>
+      <script src="js/filtrar.js"></script>
+</body>
+<script>
+    pintarMapa();
+
+    function pintarMapa() {
+        //-----------------------------------------
+        //Cargar Mapa
+        //-----------------------------------------
+
+        //elegimos el tipo de mapa que queremos
+
+        var urlMapaStreets = 'https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=CWXeRcDd3XBvYbZUOleW'; //url para poder utilizar OpenStreetMap del mapa en vision streets
+
+        var urlMapBasic = 'https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=CWXeRcDd3XBvYbZUOleW'; //esta es la url que hay que cargar si queremos el mapa basico
+
+        var urlMapaSatelliteHybrid = 'https://api.maptiler.com/maps/hybrid/{z}/{x}/{y}.jpg?key=CWXeRcDd3XBvYbZUOleW'; //esta es la url que hay que usar para cargar el mapa con vision de satelite
+
+        var urlMapaTopo = 'https://api.maptiler.com/maps/topo/{z}/{x}/{y}.png?key=CWXeRcDd3XBvYbZUOleW'; //esta es la url que hay que usar para cargar el mapa topografico
+
+
+
+        var myIcon = L.icon({
+            iconUrl: 'iconoBandera.png', //url de la imagen del icono
+            iconSize: [35, 35], //tamaño de la imagen del icono en pixeles
+            title: "Estacion de medida oficial",
+            //iconAnchor: [95, 94],//coordenadas desde la "punta" de la esquina superior izquierda
+            //popupAnchor: [-3, -76],//coordenadas del punto desde que abren las ventanas emergentes
+            //shadowUrl: 'fabrica.png',//la url de la imagen sombra del icono, si no se especifica no se crea ninguna sombra
+            //shadowSize: [68, 95],//tamaño de la imagen sombra del icono en pixeles
+            //shadowAnchor: [22, 94]//coordenadas desde la "punta" de la esquina superior iquierda
+        });
+
+        //-----------------------------------------
+        //-----------------------------------------
+        //Mapa de calor
+        //-----------------------------------------
+        var baseLayer = L.tileLayer(urlMapaStreets, {
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+            maxZoom: 18
+        });
+
+        var cfg = {
+            // radius should be small ONLY if scaleRadius is true (or small radius is intended)
+            "radius": 0.0025,
+            "maxOpacity": .8,
+            // scales the radius based on map zoom
+            "scaleRadius": true,
+            // if set to false the heatmap uses the global maximum for colorization
+            // if activated: uses the data maximum within the current map boundaries 
+            //   (there will always be a red spot with useLocalExtremas true)
+            "useLocalExtrema": true,
+            // which field name in your data represents the latitude - default "lat"
+            latField: 'lat',
+            // which field name in your data represents the longitude - default "lng"
+            lngField: 'lng',
+            // which field name in your data represents the data value - default "value"
+            valueField: 'count'
+        };
+
+
+        var heatmapLayer = new HeatmapOverlay(cfg);
+
+        var map = new L.Map('map', {
+            center: new L.LatLng(38.996622, -0.166156),
+            zoom: 15,
+            layers: [baseLayer, heatmapLayer]
+        });
+        //heatmapLayer.setData(testData);
+        setInterval(function() {
+            //actualizarMapa(heatmapLayer);      // does some work
+            //cogerDatosBaseDeDatos("14-Jan-2021",heatmapLayer);      // does some work  //Aqui le pasas el dia para coger de la base de datos los datos interpolados
+            cogerValorEstacion().then(result => cogerDatosBaseDeDatos("15-Jan-2021", heatmapLayer, result)).catch(e => console.log(e));
+        }, 1090);
+
+        //añadir icono con la informacion en el pop up
+        L.marker([38.96797739, -0.19109882], {
+                icon: myIcon
+            })
+            .addTo(map);
+
+    }
+
+
+
+    /*async function cogerValorEstacion(){
+        var peticionLecturas2 = new XMLHttpRequest();
+        peticionLecturas2.open("get", "../Backend/consultar_ultimoValorEstacion.php", true);
+        peticionLecturas2.send();
+        peticionLecturas2.onload = function () {
+            var textoJSON_noApto = this.responseText;
+            var json = JSON.parse(textoJSON_noApto);
+            //console.log(json.valor);
+            return json.valor;
+        }
+    }*/
+
+    const cogerValorEstacion = () => {
+        return new Promise((resolve, reject) => {
+
+            var peticionLecturas2 = new XMLHttpRequest();
+            peticionLecturas2.open("get", "../Backend/consultar_ultimoValorEstacion.php", true);
+            peticionLecturas2.send();
+            peticionLecturas2.onload = function() {
+                var textoJSON_noApto = this.responseText;
+                var json = JSON.parse(textoJSON_noApto);
+
+                // Carga de la promesa (normalmente tareas asíncronas).
+
+                if (json.valor >= 0) {
+                    resolve(json.valor);
+                } else {
+                    reject("Fallo!");
+                }
+            }
+        });
+    }
+
+    //----------------------------------------------------------------------------
+    //----------------------------------------------------------------------------
+    //----------------------------------------------------------------------------
+    function mostrar(valor) {
+        console.log(valor);
+    }
+
+    function cogerDatosBaseDeDatos(dia, heatmapLayer, result) {
+
+        var peticionLecturas = new XMLHttpRequest();
+
+
+        //dia = "11-Jan-2021";
+        // Dicha petición, es una petición GET que se manda al archivo PHP lecturasREST.
+        peticionLecturas.open("get", "../Backend/consultar_lecturasPorDia.php?dia=" + dia, true);
+        peticionLecturas.send();
+        var valorEstacion;
+        //cogerValorEstacion().then(result => mostrar(result)).catch(e => console.log(e));
+
+        // Tras recibir respuesta a dicha petición...
+        peticionLecturas.onload = function() {
+
+            var jsonEstacion = {
+                lat: "38.96797739",
+                lng: "-0.19109882",
+                count: result.toString()
+            };
+
+            // ...esta aparece bajo la forma de "this.responseText", un texto con un formato que recuerda al de JSON.
+            // Como al final de dicho texto se encuentra "[]", no cumple con el convenio del formato JSON.
+            var textoJSON_noApto = this.responseText;
+            //console.log(textoJSON_noApto)
+
+            // Debido a eso, se le quitan esos dos carácteres. 
+            //var textoJSON_Apto = textoJSON_noApto.substring(0, textoJSON_noApto.length - 3);
+
+            //console.log(textoJSON_Apto);
+            // Ahora el texto ya es apto para pasarlo a JSON.
+            var json = JSON.parse(textoJSON_noApto);
+            json.push(jsonEstacion);
+            console.log(json);
+
+
+            heatmapLayer.data = 0;
+            var testData = {
+                max: 8,
+                data: json
+            };
+            heatmapLayer.setData(testData);
+        }
+
+
+    }
+
+
+    //----------------------------------------------------------------------------
+    //----------------------------------------------------------------------------
+    //----------------------------------------------------------------------------
+
+</script>
+</html>
